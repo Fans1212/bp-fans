@@ -1,6 +1,6 @@
 blueprint:
-  name: bp_example
-  description: blueprint example
+  name: bp-fans
+  description: Fans' for hackathon
   icon: 
     file : redstone.png
     content : (--- base64 encoded ---)
@@ -8,8 +8,8 @@ blueprint:
   documentation : 'http://openstack.org/forj'
   locations:
     modules: 
-      - src-repo: bp_example
-        git: https://github.com/daihaojun/bp-example.git
+      - src-repo: bp-fans
+        git: https://github.com/fans1212/bp-fans.git
         install:
           puppet-apply: install
         uninstall:

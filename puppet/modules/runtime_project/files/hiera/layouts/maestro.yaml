@@ -24,13 +24,20 @@ classes:
 # create the folling nodes
 maestro::nodes:
   - 'web'
+  - 'jdk'
+  - 'svn'
+  - 'maven'
+  - 'jenkins'
+  - 'nodejs'
+  - 'mysql'
+  - 'jboss'
 
 
 # define the site information for this blueprint
 # shortname is a descriptive name, TODO: source this from the blueprint data.
 jimador::site:
   maestro_url: "http://%{::maestro::node_vhost_lookup::vname}"
-  shortname: "bp-example"
+  shortname: "Hackathon From Fans' Team"
 
 maestro::dns::global::default_contact: 'admin@%{::erodomain}'
 
